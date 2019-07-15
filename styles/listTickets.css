@@ -1,0 +1,110 @@
+.lbl {
+    display: inline-block;
+    width: 100px;
+    margin: 5px;
+}
+.details {
+    height: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+.titre{
+    height:80px;
+    width:auto;
+    display:block;
+    color:black;
+    text-align:left;
+    font-size:36px;
+    padding-left:5%;
+    padding-top:1%;
+}
+
+.message{
+    width: auto;
+    margin: 0 auto;
+    background-color: #9ae291;
+}
+.message span{
+    font-weight: bold; 
+     
+}
+
+
+.placeHolder div {
+    opacity:1;
+    transition:opacity 500ms;
+}
+div.waa {
+    opacity:0;
+}
+.tbx{
+    
+    display:inline-block;   
+    margin:5px;
+    width: auto;
+}
+ .tbx_module{
+    display:inline-block;   
+    margin:5px;
+    width: auto;
+}
+
+.block {
+    float:left;
+    width:auto;
+    text-align:left;
+    margin: 0 auto;
+    
+}
+.tbx_vide {
+    display:inline-block;   
+    margin:5px;
+    width: auto;
+    visibility: hidden;
+}
+ #aucunFiltre {
+     cursor: pointer;
+     font-weight: bold;
+ }
+
+.ticket {
+	border-style:solid;
+	border-color: lightgray;
+	border-radius: 10px;
+    margin:5px;
+    padding:2px;
+    width:auto;
+    display: grid;
+    text-align:left;
+    background-color: white;
+}
+
+.ticket a {
+	text-decoration:none;
+	color: black;
+}
+.centrer{
+    width:90%;
+    margin:0 auto;
+    padding-top: 2%;
+}
+.filter {
+    clear:both;
+    display: flex;
+    border-bottom: solid 1px;
+    margin-bottom:1%;
+    padding-bottom:1%;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+}
+
+.filter span{
+    display:inline-block; 
+    width:auto;
+    margin:auto ;
+}
+
+.filter input {
+    display:inline-block; 
+    width:auto;
+}

@@ -1,0 +1,91 @@
+﻿.informations{
+  display: block;
+  margin:0px auto;
+  padding-top: 20px;
+}
+.gris{
+    background-color: #c1d9ff;
+}
+.details-ticket{
+    margin: 0 auto;
+
+}
+.partie{
+    max-width:700px;
+    margin: 0 auto;
+    border-bottom: 1px solid black;
+}
+.informations h3{
+    margin:5px; 
+    text-align:center;
+    /*display:inline-block;*/ 
+
+}
+.informations label { 
+    display:inline-block; 
+    margin:5px; 
+    text-align:left;
+    vertical-align: top;
+    /*border: 1px solid;*/
+    width:200px;
+    word-wrap: normal;
+}
+#lbl_echanges{
+    width:200px;
+    word-wrap: normal;
+}
+#retour{
+    text-decoration:none;
+    background-color:unset;
+    border: none;
+}
+span#titreTicket{
+    font-family: "Quando", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 28px;
+    text-decoration: underline overline #9dd136;
+
+}
+
+.informations input:read-only { 
+    display:inline-block;   
+    margin:5px 5px 0px 5px;
+    height: auto;
+    width:470px;
+    background-color: transparent;
+    border:none;
+}
+.informations textarea:read-only {
+    display:inline-block;   
+    margin:5px 5px 0px 5px;
+    height: auto;
+    width: 460px;
+    resize: none;
+    background-color: transparent;
+    border:none;
+}
+
+.title .btn {
+    padding:2px;
+    border:2px;
+    border-style:solid;
+    border-color: #b4e24f;
+    border-radius: 6px;
+    font-style: unset;
+    text-decoration: none;
+    color: black;
+    float:left;
+    background-color:#b4e24f;
+}
+.title{
+    text-align:center;
+}
+#left-arrow {
+    height: 15px;
+    width: 20px;
+}
+.details-ticket {
+    margin:15px;
+}

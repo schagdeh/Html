@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/Trame.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>
+	Portail ticketing
+</title>
+<link rel="icon" type="image/png" href="image/favicon2-3.png">
+<link href="styles/trame.css" rel="stylesheet" type="text/css">
+<link href="styles/listTickets.css" rel="stylesheet" type="text/css">
+<link href="styles/menu.css" rel="stylesheet" type="text/css">
+<link href="styles/coordonees.css" rel="stylesheet" type="text/css">
+<link href="styles/createTicket.css" rel="stylesheet" type="text/css">
+<link href="styles/detailsTicket.css" rel="stylesheet" type="text/css">
+<script src="scripts/jquery-3-3-1.min.js"></script>
+</head>
+<body>
+    <div class="global">
+        <div class="divLogo">
+            <div class="logo">
+                <img alt="logo" class="auto-style1" src="image/logo.png">
+            </div>
+            <div class="logos">
+                <a href="#"><img class="logo1" src="image/logo_france.png"></a>
+                <a href="#"><img class="logo2" src="image/logo-gb.png"></a>
+            </div>
+            <div class="menu">
+
+
+
+
+<title>
+
+</title>
+
+    <form method="post" action="https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/Menu.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE5MDM1MDUzNTUPZBYCAgMPZBYIAgEPFgIeCWlubmVyaHRtbAUUQ3ImIzIzMztlciB1biB0aWNrZXRkAgMPFgIfAAULTWVzIHRpY2tldHNkAgUPFgIfAAUUTWVzIGNvb3Jkb25uJiMyMzM7ZXNkAgcPFgIfAAUQRCYjMjMzO2Nvbm5leGlvbmRk6i1Jtu1/DLj8GzuWbnzy/i9PokEUclDGQHvCnaL6ULQ=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2EAEF0B4">
+</div>
+        <div class="gbl">
+            <ul>
+                <li>
+                    <a id="l3" class="menu_item" style="text-decoration: underline; color: rgb(157, 209, 54);">Créer un ticket</a>
+                </li>
+                <li>
+                    <a id="l2" class="menu_item">Mes tickets</a>
+                </li>
+                <li>
+                    <a id="l1" class="menu_item">Mes coordonnées</a>
+                </li>
+                <li>
+                    <a href="https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/Identification.aspx" id="deconnexion" class="menu_item">Déconnexion</a>
+                </li>
+            </ul>
+        </div>
+        <script>
+            $("#l1").click(function () {
+                $(".content").load("Coordonees.aspx");
+                $('#l1').css('text-decoration', 'underline');
+                $('#l1').css('color', '#9dd136');
+                $('#l2').css('text-decoration', '');
+                $('#l2').css('color', '');
+                $('#l3').css('text-decoration', '');
+                $('#l3').css('color', '');
+            }
+                 );
+            $("#l2").click(function () {
+                $(".content").load("ListeTickets.aspx");
+                $('#l1').css('text-decoration', '');
+                $('#l1').css('color', '');
+
+                $('#l2').css('text-decoration', 'underline');
+                $('#l2').css('color', '#9dd136');
+
+                $('#l3').css('text-decoration', '');
+                $('#l3').css('color', '');
+            }
+                 );
+            $("#l3").click(function () {
+                $(".content").load("CreateTicket.aspx");
+                $('#l1').css('text-decoration', '');
+                $('#l1').css('color', '');
+                $('#l2').css('text-decoration', '');
+                $('#l2').css('color', '');
+                $('#l3').css('text-decoration', 'underline');
+                $('#l3').css('color', '#9dd136');
+            }
+                 );
+        </script>
+
+    </form>
+
+
+</div>
+        </div>
+        
+        
+        <div class="content">
+
+
+
+
+<title>
+
+</title><link href="./Portail ticketing1_files/bootstrap-multiselect.css" rel="stylesheet" type="text/css">
+    <script src="./Portail ticketing1_files/bootstrap-multiselect.js" type="text/javascript"></script>
+    
+
+
+    <input name="hiddentel" type="text" id="hiddentel" style="display:none" value="+33 (0)2 13 53 80 22">
+    <input name="hiddennom" type="text" id="hiddennom" style="display:none" value="Thierry DUVANEL">
+    <input name="hiddenmail" type="text" id="hiddenmail" style="display:none" value="jbruno@hotmail.ch">
+    <form method="post" action="https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/CreateTicket.aspx" onsubmit="javascript:return WebForm_OnSubmit();" id="form1" enctype="multipart/form-data">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTIwNDU3NTIxOA9kFgICCQ8WAh4HZW5jdHlwZQUTbXVsdGlwYXJ0L2Zvcm0tZGF0YRZmAgEPFgIeCWlubmVyaHRtbAUUQ3ImIzIzMztlciB1biB0aWNrZXRkAgMPFgIfAQUMTG9jYWxpc2F0aW9uZAIFDxYCHwEFE1BlcnNvbm5lIGRlIGNvbnRhY3RkAgcPFgIfAQUZRGVzY3JpcHRpb24gZGUgbGEgZGVtYW5kZWQCCQ8WAh8BBRJSJiMyMzM7Y2FwaXR1bGF0aWZkAgsPFgIfAQUMTG9jYWxpc2F0aW9uZAINDw8WAh4EVGV4dAUKSW1tZXVibGUgKmRkAg8PEA8WBh4ORGF0YVZhbHVlRmllbGQFA0tleR4NRGF0YVRleHRGaWVsZAUFVmFsdWUeC18hRGF0YUJvdW5kZ2QQFQQTTGlzdGUgZGVzIGltbWV1YmxlcwpFWFTDiVJJRVVSC0LDglRJTUVOVCBJCVBBUktJTkcgTxUEAi0xAjYyAjU4AjY5FCsDBGdnZ2dkZAIRDw8WAh8CBQZOaXZlYXVkZAITDxAPFgYfAwUDS2V5HwQFBVZhbHVlHwVnZBAVBA5Ob24gcmVuc2VpZ27DqQEwAi0xATQVBAItMQcxMDAwNDM2BDM3NDkHMTAwMDI1NxQrAwRnZ2dnZGQCFQ8PFgIfAgUGTW9kdWxlZGQCFw8QDxYGHwMFA0tleR8EBQVWYWx1ZR8FZ2QQFQUOTm9uIHJlbnNlaWduw6kLUUlFWFQgMCAxMTYLUUlFWFQgMCAxMTcJUUlJIDQgMTI0ClFJTyAtMSAxNjgVBQItMQQ3NTQ3BDc1NDgENzEzNwQ4MDA5FCsDBWdnZ2dnZGQCGQ8PFgIfAgUrQ2hlcmNoZXIgbWEgcsOpZsOpcmVuY2UgbW9kdWxlIHN1ciBFUEZMIG1hcGRkAhsPFgIeBXZhbHVlBQdTdWl2YW50ZAIdDxYCHwEFE1BlcnNvbm5lIGRlIGNvbnRhY3RkAh8PDxYCHwIFK1JlcHJlbmRyZSBsZXMgaW5mb3JtYXRpb25zIGRlIGwndXRpbGlzYXRldXJkZAIjDxYCHwEFTVNpIGxhIHBlcnNvbm5lIGRlIGNvbnRhY3QgZXN0IGRpZmYmIzIzMztyZW50ZSwgcmVuc2VpZ25leiBsZXMgY2hhbXBzIHN1aXZhbnRzZAIlDw8WAh8CBQVOb20gKmRkAikPDxYCHwIFC0NvdXJyaWVsICAqZGQCLQ8PFgIfAgUOVMOpbMOpcGhvbmUgICpkZAIxDxYCHwYFC1Byw6ljw6hkZW50ZAIzDxYCHwYFB1N1aXZhbnRkAjUPFgIfAQUZRGVzY3JpcHRpb24gZGUgbGEgZGVtYW5kZWQCOw8PFgIfAgUKQ2F0w6lnb3JpZWRkAj0PEA8WBh8DBQNLZXkfBAUFVmFsdWUfBWdkEBVBD05vbiByZW5zZWlnbsOpZQZEaXZlcnMHQWxhcm1lcxJCb2l0ZXMgYXV4IGxldHRyZXMGQWNjw6hzBUNsw6lzB1NlcnJ1cmUKRWxlY3RyaXF1ZQpFcXVpcGVtZW50CkV4dGVyaWV1cnMMSW5mb3JtYXRpcXVlCU5ldHRveWFnZQpTYW5pdGFpcmVzCVN0cnVjdHVyZQtUZW1wZXJhdHVyZQlDaGF1ZmZhZ2UNQ2xpbWF0aXNhdGlvbg1QbGFxdWUgYWN0aXZlC1ZlbnRpbGF0aW9uEENhcnJlbGFnZV9waWVycmUHQ2xvaXNvbglGZW7DqnRyZXMETGlubwlNb3F1ZXR0ZXMDTXVyB1BhcnF1ZXQJUGVpbnR1cmVzB1BsYWZvbmQGUG9ydGVzE1BvcnRlcyBhdXRvbWF0aXF1ZXMEU29scwZTdG9yZXMKU3RydWN0dXJlcxFGb3NzZSBkZSByZWxldmFnZQlTYW5pdGFpcmUCV0MNQ29uY2llcmdlIElTUwhEw6ljaGV0cwlOZXR0b3lhZ2ULRGF0YSBjZW50ZXIFRWNyYW4LSW1wcmltYW50ZXMMSW5mb3JtYXRpcXVlC0V4dMOpcmlldXJzB1BhcmtpbmcFVsOpbG8KQXNjZW5zZXVycw9Gb250YWluZSDDoCBlYXUQTWFjaGluZSDDoCBjYWbDqQJESQxFbGVjdHJpY2l0w6kFTGFtcGUDTUNSBENhdmUMQ29uc29tbWFibGVzCUNvdXBlLWZldQ1Ew6lnw6J0cyBlYXV4F0TDqXNpZ25hdGlvbiBlbnRyZXByaXNlBkRpdmVycwdGbHVpZGVzCE1vYmlsaWVyDVNhYyBwb3ViZWxsZXMUU2FsbGUgZGUgY29uZsOpcmVuY2ULU8OpY3VyaXTDqXMHQ2FtaXBybxVBAi0xBDM4MjgEMzgyOQQzODMxBDM4MzMEMzgzNAQzODM1BDQxNDQENDE0NQQ0MTQ2BDQxNDcENDE0OAQ0MTQ5BDQxNTAENDE1MQQ0MTUyBDQxNTMENDE1NAQ0MTU1BDQxNTYENDE1NwQ0MTU4BDQxNTkENDE2MAQ0MTYxBDQxNjIENDE2MwQ0MTY0BDQxNjUENDE2NgQ0MTY3BDQxNjgENDE2OQQ0MTcwBDQxNzEENDE3MgQ0MTczBDQxNzQENDE3NQQ0MTc2BDQxNzcENDE3OAQ0MTc5BDQxODAENDE4MQQ0MTgyBDQxODMENDE4NAQ0MTg1BDQxODYENDE4NwQ0MTg4BDQxODkENDE5MAQ0MTkxBDQxOTIENDE5MwQ0MTk0BDQxOTUENDE5NgQ0MTk3BDQxOTgENDE5OQQ0MjAwBDQyMDEUKwNBZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAI/Dw8WAh8CBQ1EZXNjcmlwdGlvbiAqZGQCQw8PFgIfAgUiVMOpbMOpY2hhcmdlciB1biBkb2N1bWVudCAoPCAxMG1iKWRkAkUPDxYCHwIFEkNob2lzaXIgdW4gZmljaGllcmRkAksPFgIfBgULUHLDqWPDqGRlbnRkAk0PFgIfBgUHU3VpdmFudGQCTw8WAh8BBRJSJiMyMzM7Y2FwaXR1bGF0aWZkAlEPFgIfAQUMTG9jYWxpc2F0aW9uZAJTD2QWAgIBDxYCHwEFMFZldWlsbGV6IHJlbnNlaWduZXIgbCYjMzk7aW1tZXVibGUgY29uY2VybiYjMjMzO2QCVQ8PFgIfAgUISW1tZXVibGVkZAJZDw8WAh8CBShWZXVpbGxleiByZW5zZWlnbmVyIGwnaW1tZXVibGUgY29uY2VybsOpZGQCWw8PFgIfAgUGTml2ZWF1ZGQCXw8PFgIfAgUGTW9kdWxlZGQCYw8WAh8BBRNQZXJzb25uZSBkZSBjb250YWN0ZAJlDw8WAh8CBQNOb21kZAJpDw8WAh8CBTRWZXVpbGxleiByZW5zZWlnbmVyIGxlIG5vbSBkZSBsYSBwZXJzb25uZSBkZSBjb250YWN0ZGQCaw8PFgIfAgUIQ291cnJpZWxkZAJvDw8WAh4MRXJyb3JNZXNzYWdlBS1WZXVpbGxleiByZW5zZWlnbmVyIHVuZSBhZHJlc3NlIG1haWwgY29ycmVjdGVkZAJxDw8WAh8CBRtWZXVpbGxleiByZW5zZWlnbmVyIGxlIG1haWxkZAJzDw8WAh8CBQtUw6lsw6lwaG9uZWRkAncPDxYCHwIFIlZldWlsbGV6IHJlbnNlaWduZXIgbGUgdMOpbMOpcGhvbmVkZAJ5DxYCHwEFGURlc2NyaXB0aW9uIGRlIGxhIGRlbWFuZGVkAnsPDxYCHwIFCkNhdMOpZ29yaWVkZAJ/Dw8WAh8CBQtEZXNjcmlwdGlvbmRkAoMBDw8WAh8CBR9WZXVpbGxleiBlbnRyZXIgdW5lIGRlc2NyaXB0aW9uZGQChQEPDxYCHwIFFkRvY3VtZW50IHTDqWzDqWNoYXJnw6lkZAKJAQ8PFgIfAgUQQ3LDqWVyIGxlIHRpY2tldGRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQdjb250YWN0BQpjYXRlZ29yaWVzJEh+GooYMeOCZRZ407sYM945/m2W+2nJ/ae5fheyjKA=">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1'];
+if (!theForm) {
+    theForm = document.form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="./Portail ticketing1_files/WebResource.axd" type="text/javascript"></script>
+
+
+<script src="./Portail ticketing1_files/WebResource(1).axd" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</script>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="86EBD297">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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">
+</div>
+        <div class="titreT">
+            <span id="titre">Créer un ticket</span>
+        </div>
+    <div class="create-ticket">
+    <div class="bandeau">
+        <div class="etp" id="etp1">
+            <a id="etp_localisation">Localisation</a>
+            <img class="right-arrow" src="image/next-arrow-png-13.png">
+        </div>
+        <div class="etp" id="etp2">
+            <a id="etp_personneContact">Personne de contact</a>
+            <img class="right-arrow" src="image/next-arrow-png-13.png">
+        </div>
+        <div class="etp" id="etp3">
+            <a id="etp_descriptionPb">Description de la demande</a>
+            <img class="right-arrow" src="image/next-arrow-png-13.png">
+        </div>
+        <div class="etp" id="etp4">
+            <a id="etp_recap">Récapitulatif</a>
+        </div>
+    </div>
+    <div class="etapes">
+        
+        <div id="etape1" class="form-localisation" style="display: block;">
+            <h1 id="h_loca">Localisation</h1>
+            <!-- Immeuble, module, niveau -->
+            
+            <label for="immeuble" id="lbl_immeuble">Immeuble test *</label>
+            <select name="immeuble" id="immeuble">
+	<option value="-1" ref="Liste des immeubles">Liste des immeubles</option>
+	<option value="62" ref="QIEXT">EXTÉRIEUR</option>
+	<option value="58" ref="QII">BÂTIMENT I</option>
+	<option value="69" ref="QIO">PARKING O</option>
+
+</select>
+            <br>
+            
+            <label for="niveau" id="lbl_niveau">Niveau</label>
+            <select name="niveau" id="niveau">
+	<option value="-1">Non renseigné</option>
+	<option value="1000436">0</option>
+	<option value="3749">-1</option>
+	<option value="1000257">4</option>
+
+</select>
+            <br>
+            
+            <label for="module" id="lbl_module">Module</label>
+            <select name="module" id="module">
+	<option value="-1">Non renseigné</option>
+	<option value="7547">QIEXT 0 116</option>
+	<option value="7548">QIEXT 0 117</option>
+	<option value="7137">QII 4 124</option>
+	<option value="8009">QIO -1 168</option>
+
+</select>
+            <br>
+
+            <a id="lbl_rechercherRefModule" href="https://map.epfl.ch/" target="_blank">Chercher ma référence module sur EPFL map</a>
+            
+            <br>
+            <br>
+            <input name="sub_etp1" type="button" id="sub_etp1" value="Suivant">
+        </div>
+        
+        <div id="etape2" class="form-contact" style="display: none;">
+            <h1 id="h_personneContact">Personne de contact</h1>
+
+            <!-- Personne de contact : mail, tel
+                Verif : personne de contact est-elle différente de l'utilisateur ?   -->
+            <label for="contact" id="lbl_contact">Reprendre les informations de l'utilisateur</label>
+            <input id="contact" type="checkbox" name="contact">
+            <p id="infosCreate">Si la personne de contact est différente, renseignez les champs suivants</p>
+
+            <label for="nom" id="lbl_nom">Nom *</label>
+            <input name="nom" type="text" id="nom">
+            <br>
+            <label for="mail" id="lbl_mail">Courriel  *</label>
+            <input name="mail" type="email" id="mail">
+            <br>
+            <label for="tel" id="lbl_tel">Téléphone  *</label>
+            <input name="tel" type="text" id="tel">
+
+            <br>
+
+            <div class="submit">
+                <input name="sub_etp2_1" type="button" id="sub_etp2_1" value="Précèdent">
+                <input name="sub_etp2_2" type="button" id="sub_etp2_2" value="Suivant">
+            </div>
+
+        </div>
+        
+        <div id="etape3" class="form-description" style="display: none;">
+            <h1 id="h_descriDemande">Description de la demande</h1>
+
+            <!-- Description locataire, telechargement de pièces jointes -->
+            
+            <span id="Label1"></span>
+            <span id="recapitulatif_selection"></span>
+            <br>
+            <label for="categories" id="lbl_categories">Catégorie</label>
+            
+            <select size="4" name="categories" multiple="multiple" id="categories">
+	<option value="-1">Non renseignée</option>
+	<option value="3828">Divers</option>
+	<option value="3829">Alarmes</option>
+	<option value="3831">Boites aux lettres</option>
+	<option value="3833">Accès</option>
+	<option value="3834">Clés</option>
+	<option value="3835">Serrure</option>
+	<option value="4144">Electrique</option>
+	<option value="4145">Equipement</option>
+	<option value="4146">Exterieurs</option>
+	<option value="4147">Informatique</option>
+	<option value="4148">Nettoyage</option>
+	<option value="4149">Sanitaires</option>
+	<option value="4150">Structure</option>
+	<option value="4151">Temperature</option>
+	<option value="4152">Chauffage</option>
+	<option value="4153">Climatisation</option>
+	<option value="4154">Plaque active</option>
+	<option value="4155">Ventilation</option>
+	<option value="4156">Carrelage_pierre</option>
+	<option value="4157">Cloison</option>
+	<option value="4158">Fenêtres</option>
+	<option value="4159">Lino</option>
+	<option value="4160">Moquettes</option>
+	<option value="4161">Mur</option>
+	<option value="4162">Parquet</option>
+	<option value="4163">Peintures</option>
+	<option value="4164">Plafond</option>
+	<option value="4165">Portes</option>
+	<option value="4166">Portes automatiques</option>
+	<option value="4167">Sols</option>
+	<option value="4168">Stores</option>
+	<option value="4169">Structures</option>
+	<option value="4170">Fosse de relevage</option>
+	<option value="4171">Sanitaire</option>
+	<option value="4172">WC</option>
+	<option value="4173">Concierge ISS</option>
+	<option value="4174">Déchets</option>
+	<option value="4175">Nettoyage</option>
+	<option value="4176">Data center</option>
+	<option value="4177">Ecran</option>
+	<option value="4178">Imprimantes</option>
+	<option value="4179">Informatique</option>
+	<option value="4180">Extérieurs</option>
+	<option value="4181">Parking</option>
+	<option value="4182">Vélo</option>
+	<option value="4183">Ascenseurs</option>
+	<option value="4184">Fontaine à eau</option>
+	<option value="4185">Machine à café</option>
+	<option value="4186">DI</option>
+	<option value="4187">Electricité</option>
+	<option value="4188">Lampe</option>
+	<option value="4189">MCR</option>
+	<option value="4190">Cave</option>
+	<option value="4191">Consommables</option>
+	<option value="4192">Coupe-feu</option>
+	<option value="4193">Dégâts eaux</option>
+	<option value="4194">Désignation entreprise</option>
+	<option value="4195">Divers</option>
+	<option value="4196">Fluides</option>
+	<option value="4197">Mobilier</option>
+	<option value="4198">Sac poubelles</option>
+	<option value="4199">Salle de conférence</option>
+	<option value="4200">Sécurités</option>
+	<option value="4201">Camipro</option>
+
+</select>
+            <br>
+            
+            <label for="descLocataire" id="lbl_descLocataire">Description *</label>
+            <textarea name="descLocataire" rows="5" cols="20" id="descLocataire"></textarea>
+            <br> 
+            
+            <span id="lbl_download">Télécharger un document (&lt; 10mb)</span>
+            <label for="file" id="lbl_telechargement">Choisir un fichier</label>
+            <input type="file" name="file" id="file">
+            <br>
+            <label for="file" id="lbl_file"></label>  
+            <br>
+
+            
+            <div class="submit">
+                <input name="sub_etp3_1" type="button" id="sub_etp3_1" value="Précèdent">
+                <input name="sub_etp3_2" type="button" id="sub_etp3_2" value="Suivant">
+            </div>
+        </div>
+    
+        
+        <div id="etape4" class="form-recapitulatif" style="display: none;">
+            <h1 id="h_recapitulatif">Récapitulatif</h1>
+            <!-- Recapitulatif des informations entrées, bouton création -->
+
+            <h2 id="h_localisation">Localisation</h2>
+            <!-- Immeuble, module, niveau & catégories -->
+            <div id="div_non" style="display: none;">
+                <a id="a_msgErreur" class="validator">Veuillez renseigner l'immeuble concerné</a>
+            </div>
+            <label for="immeuble_recap" id="lbl_immeuble_recap">Immeuble</label>
+            <input name="immeuble_recap" type="text" readonly="readonly" id="immeuble_recap" disabled="disabled" class="aspNetDisabled">
+            <br>
+            <span id="validator_immeuble" class="validator" style="visibility:hidden;">Veuillez renseigner l'immeuble concerné</span>
+            
+<br>            
+            <label for="niveau_recap" id="lbl_niveau_recap">Niveau</label>
+            <input name="niveau_recap" type="text" readonly="readonly" id="niveau_recap" disabled="disabled" class="aspNetDisabled">
+<br>
+            <label for="module_recap" id="lbl_module_recap">Module</label>
+            <input name="module_recap" type="text" readonly="readonly" id="module_recap" disabled="disabled" class="aspNetDisabled">
+            <br>         
+
+            
+             
+            <h2 id="h_personneDeContact">Personne de contact</h2>
+
+            <label for="nom_recap" id="lbl_nom_recap">Nom</label>
+            <input name="nom_recap" type="text" readonly="readonly" id="nom_recap" disabled="disabled" class="aspNetDisabled">
+<br>
+            <span id="validator_nom" class="validator" style="visibility:hidden;">Veuillez renseigner le nom de la personne de contact</span>
+<br>
+            <label for="mail_recap" id="lbl_mail_recap">Courriel</label>
+            <input name="mail_recap" type="email" readonly="readonly" id="mail_recap" disabled="disabled" class="aspNetDisabled">
+<br>
+            <span id="regexEmailValid" class="validator" style="visibility:hidden;">Veuillez renseigner une adresse mail correcte</span>
+            <span id="validator_mail" class="validator" style="visibility:hidden;">Veuillez renseigner le mail</span>
+<br>
+            <label for="tel_recap" id="lbl_tel_recap">Téléphone</label>
+            <input name="tel_recap" type="text" readonly="readonly" id="tel_recap" disabled="disabled" class="aspNetDisabled">
+<br>
+            <span id="validator_tel" class="validator" style="visibility:hidden;">Veuillez renseigner le téléphone</span>
+
+<br>
+            <h2 id="h_recap_descriptionDemande">Description de la demande</h2>
+
+            <!--Categorie & Description locataire & pièces jointes -->
+            
+            <label for="categories_recap" id="lbl_categories_recap">Catégorie</label>
+            <input name="categories_recap" type="text" readonly="readonly" id="categories_recap" disabled="disabled" class="aspNetDisabled">
+            <br>    
+            <label for="descLocataire_recap" id="lbl_descLocataire_recap">Description</label>
+            <textarea name="descLocataire_recap" rows="5" cols="20" readonly="readonly" id="descLocataire_recap" disabled="disabled" class="aspNetDisabled"></textarea>
+            <br>
+            <span id="validator_description" class="validator" style="visibility:hidden;">Veuillez entrer une description</span>
+
+<br> 
+            <label for="file_recap" id="lbl_file_recap">Document téléchargé</label>
+            <input name="file_recap" type="text" readonly="readonly" id="file_recap" disabled="disabled" class="aspNetDisabled">
+<br>
+            <div class="submit">
+                <input type="submit" name="creerTicket" value="Créer le ticket" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;creerTicket&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="creerTicket">
+            </div>
+        </div>
+        
+    </div>
+        
+    </div>
+<script>
+
+
+
+    $(document).ready(function () {
+        $('#div_non').hide();
+    })
+   
+    $("#file").change(function () {
+        $('#lbl_file').text($("#file").val());
+        console.log($('#lbl_file').text());
+        //console.log($("#file").val());
+    });
+    
+    //  A chaque changement de valeur dans un input, 
+    // la valeur va être recopié dans l'input correspondant du récapitulatif (étape4)
+    $("input[type='text'], input[type='email'], input[type='file']").change(function () {
+        var name_recap = "#" + this.id + "_recap";
+        $(name_recap).val($(this).val());
+        
+        //$(name_recap).attr('value', $(this).val());
+        //console.log("input " + $(this).val());
+        //console.log("Recap " + name_recap + " : " + $(name_recap).val());
+    });
+    $("textarea").change(function () {
+        var name_recap = "#" + this.id + "_recap";
+        $(name_recap).val($(this).val());
+    });
+    $("select").change(function () {
+        var name_recap = "#" + this.id + "_recap";
+        var name_selected = "#" + this.id + " option:selected";
+        $(name_recap).val($(name_selected).text());
+        $(name_recap).attr("data-id", $(name_selected).val());
+
+
+       // $("#recapitulatif_selection").text($("#categories option:selected").text());
+
+        var listeCategories = '';
+        $("#categories option:selected").each(function () {
+            if (listeCategories != '')
+            { listeCategories += ';';}
+            listeCategories += $(this).text();
+        });
+        $("#recapitulatif_selection").text(listeCategories);
+
+
+
+        if ($("#immeuble option:selected").attr("ref") == 'Liste des immeubles' || $("#immeuble option:selected").attr("ref") == 'List of buildings') {
+            $('#div_non').show();
+            $('#creerTicket').prop("disabled", true);
+        }
+        else {
+            $('#div_non').hide();
+            $('#creerTicket').prop("disabled", false);
+
+        }
+    })
+    //Lorsque l'utilisateur modifie la valeur selectionnée de la liste immeuble, la liste des modules est modifié en fonction de la valeur selectionnée
+    $("#immeuble").change(function () {
+        // on affiche tous les modules existants
+        $(document.getElementById('module').options).each(function () {
+            $(this).show();
+        });
+        var slec = $("#immeuble option:selected")
+        var imm = $("#immeuble option:selected").attr("ref");
+        //console.log(imm);
+
+        if (imm == "Liste des immeubles" || imm == "List of buildings" ) {
+            $(document.getElementById('module').options).each(function () {
+                $(this).show();
+            });
+        }
+        else {
+            $(document.getElementById('module').options).each(function () {
+                var arrnom = $(this).text().split(" ");
+                var nom = arrnom[0];
+                if (nom != imm) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+                $("#module option[value=-1]").show();
+                $("#immeuble option[value=-1]").show();
+            });
+        }
+    });
+    // la valeur selectionnée dans la liste immeuble modifie en fonction du module choisi par l'utilisateur
+    $("#module").change(function () {
+        $(document.getElementById('immeuble').options).each(function () {
+            $(this).show();
+        });
+        var module = $("#module option:selected").text();
+        console.log(module)
+        var nomBatiment = module.split(" ")[0];
+        console.log(nomBatiment);
+        if (nomBatiment == "Non" || nomBatiment == "Not") {
+            $(document.getElementById('immeuble').options).each(function () {
+                $(this).show();
+            });
+        }
+        else {
+            $(document.getElementById('immeuble').options).each(function () {
+                if ($(this).attr("ref") != nomBatiment) {
+                    $(this).hide();
+                }
+                else {
+                    $(this).show();
+                }
+                $("#module option[value=-1]").show();
+                $("#immeuble option[value=-1]").show();
+            });
+        }
+    });
+
+
+    // Si case à cocher est checked, les champs email et telephone se remplissent avec les valeurs du contact connecté
+    // Ces 2 champs deviennent disabled et les champs recapitulatif correspondants sont remplis
+    // si on décoche, les champs se vident et deviennent enabled,
+    // les champs récapitulatifs correpondants se vident.
+    $('#contact').on('click', function () {
+        if ($(this).is(':checked')) {
+            $('#mail').attr('readonly', true);
+            $('#tel').attr('readonly', true);
+            $('#nom').attr('readonly', true);
+            var tel = $('#hiddentel').val();
+            var mail = $('#hiddenmail').val();
+            var nom = $('#hiddennom').val();
+            $("#mail_recap").val(mail);
+            $("#tel_recap").val(tel);
+            $("#nom_recap").val(nom);
+            $('#mail').val(mail);
+            $('#tel').val(tel);
+            $('#nom').val(nom);
+        } else {
+            $('#mail').attr('readonly', false);
+            $('#tel').attr('readonly', false);
+            $('#nom').attr('readonly', false);
+            $("#mail_recap").val('');
+            $("#tel_recap").val('');
+            $("#nom_recap").val('');
+            $('#mail').val('');
+            $('#tel').val('');
+            $('#nom').val('');
+        }
+    });
+
+
+    // Contrôle des clics pour la navigation entre les étapes
+    $("#etp1, #sub_etp2_1").click(function () {
+        $('#etape1').css('display', 'block');
+        $('#etape2').css('display', 'none');
+        $('#etape3').css('display', 'none');
+        $('#etape4').css('display', 'none');
+        $('#etp1').css('background-color', '#9dd136');
+        $('#etp2').css('background-color', 'transparent');
+        $('#etp3').css('background-color', 'transparent');
+        $('#etp4').css('background-color', 'transparent');
+    });
+
+    $("#etp2, #sub_etp1, #sub_etp3_1").click(function () {
+        $('#etape1').css('display', 'none');
+        $('#etape2').css('display', 'block');
+        $('#etape3').css('display', 'none');
+        $('#etape4').css('display', 'none');
+        $('#etp1').css('background-color', 'transparent');
+        $('#etp2').css('background-color', '#9dd136');
+        $('#etp3').css('background-color', 'transparent');
+        $('#etp4').css('background-color', 'transparent');
+    });
+
+    $("#etp3, #sub_etp2_2").click(function () {
+        $('#etape1').css('display', 'none');
+        $('#etape2').css('display', 'none');
+        $('#etape3').css('display', 'block');
+        $('#etape4').css('display', 'none');
+        $('#etp1').css('background-color', 'transparent');
+        $('#etp2').css('background-color', 'transparent');
+        $('#etp3').css('background-color', '#9dd136');
+        $('#etp4').css('background-color', 'transparent');
+    });
+
+    $("#etp4, #sub_etp3_2").click(function () {
+        $('#etape1').css('display', 'none');
+        $('#etape2').css('display', 'none');
+        $('#etape3').css('display', 'none');
+        $('#etape4').css('display', 'block');
+        $('#etp1').css('background-color', 'transparent');
+        $('#etp2').css('background-color', 'transparent');
+        $('#etp3').css('background-color', 'transparent');
+        $('#etp4').css('background-color', '#9dd136');
+    });
+
+</script>
+    
+    
+<script type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("validator_immeuble"), document.getElementById("validator_nom"), document.getElementById("regexEmailValid"), document.getElementById("validator_mail"), document.getElementById("validator_tel"), document.getElementById("validator_description"));
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+var validator_immeuble = document.all ? document.all["validator_immeuble"] : document.getElementById("validator_immeuble");
+validator_immeuble.controltovalidate = "immeuble_recap";
+validator_immeuble.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+validator_immeuble.initialvalue = "";
+var validator_nom = document.all ? document.all["validator_nom"] : document.getElementById("validator_nom");
+validator_nom.controltovalidate = "nom_recap";
+validator_nom.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+validator_nom.initialvalue = "";
+var regexEmailValid = document.all ? document.all["regexEmailValid"] : document.getElementById("regexEmailValid");
+regexEmailValid.controltovalidate = "mail_recap";
+regexEmailValid.errormessage = "Veuillez renseigner une adresse mail correcte";
+regexEmailValid.evaluationfunction = "RegularExpressionValidatorEvaluateIsValid";
+regexEmailValid.validationexpression = "\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*";
+var validator_mail = document.all ? document.all["validator_mail"] : document.getElementById("validator_mail");
+validator_mail.controltovalidate = "mail_recap";
+validator_mail.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+validator_mail.initialvalue = "";
+var validator_tel = document.all ? document.all["validator_tel"] : document.getElementById("validator_tel");
+validator_tel.controltovalidate = "tel_recap";
+validator_tel.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+validator_tel.initialvalue = "";
+var validator_description = document.all ? document.all["validator_description"] : document.getElementById("validator_description");
+validator_description.controltovalidate = "descLocataire_recap";
+validator_description.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+validator_description.initialvalue = "";
+//]]>
+</script>
+
+
+<script type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</script>
+</form>
+
+
+</div>
+        
+    </div>
+    
+
+
+<script>
+    $(document).ready(function () {
+        $(".content").load("ListeTickets.aspx");
+        $(".menu").load("Menu.aspx");
+    });
+</script></body></html>

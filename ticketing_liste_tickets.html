@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/Trame.aspx -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Portail ticketing</title>
+    <link rel="icon" type="image/png" href="image/favicon2-3.png">
+    <link href="styles/trame.css" rel="stylesheet" type="text/css">
+    <link href="styles/listTickets.css" rel="stylesheet" type="text/css">
+    <link href="styles/menu.css" rel="stylesheet" type="text/css">
+    <link href="styles/coordonees.css" rel="stylesheet" type="text/css">
+    <link href="styles/createTicket.css" rel="stylesheet" type="text/css">
+    <link href="styles/detailsTicket.css" rel="stylesheet" type="text/css">
+    <script src="scripts/jquery-3-3-1.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body>
+<th class="global">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" style="display: flex; justify-content: space-between">
+        <div class="nav-item">
+            <img alt="logo" class="auto-style1" src="image/logo.png">
+        </div>
+        <form method="post" action="https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/Menu.aspx" id="form1">
+            <div class="aspNetHidden">
+                <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                       value="/wEPDwULLTE5MDM1MDUzNTUPZBYCAgMPZBYIAgEPFgIeCWlubmVyaHRtbAUUQ3ImIzIzMztlciB1biB0aWNrZXRkAgMPFgIfAAULTWVzIHRpY2tldHNkAgUPFgIfAAUUTWVzIGNvb3Jkb25uJiMyMzM7ZXNkAgcPFgIfAAUQRCYjMjMzO2Nvbm5leGlvbmRk6i1Jtu1/DLj8GzuWbnzy/i9PokEUclDGQHvCnaL6ULQ=">
+            </div>
+
+            <div class="aspNetHidden">
+
+                <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="2EAEF0B4">
+            </div>
+            <ul class="navbar-nav" style="border-bottom: 0px">
+                <li class="nav-item">
+                    <a id="l4" class="menu_item">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a id="l3" class="menu_item">Créer un ticket</a>
+                </li>
+                <li class="nav-item">
+                    <a id="l2" class="menu_item">Mes tickets</a>
+                </li>
+                <li class="nav-item">
+                    <a id="l1" class="menu_item">Mes coordonnées</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/Identification.aspx" id="deconnexion" class="menu_item">Déconnexion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"><img class="logo1" src="image/logo_france.png"></a>
+                    <a href="#"><img class="logo2" src="image/logo-gb.png"></a>
+                </li>
+            </ul>
+
+            <script>
+              $('#l1').click(function () {
+                  $('.content').load('Coordonees.aspx')
+                  $('#l1').css('text-decoration', 'underline')
+                  $('#l1').css('color', '#9dd136')
+                  $('#l2').css('text-decoration', '')
+                  $('#l2').css('color', '')
+                  $('#l3').css('text-decoration', '')
+                  $('#l3').css('color', '')
+                }
+              )
+              $('#l2').click(function () {
+                  $('.content').load('ListeTickets.aspx')
+                  $('#l1').css('text-decoration', '')
+                  $('#l1').css('color', '')
+
+                  $('#l2').css('text-decoration', 'underline')
+                  $('#l2').css('color', '#9dd136')
+
+                  $('#l3').css('text-decoration', '')
+                  $('#l3').css('color', '')
+                }
+              )
+              $('#l3').click(function () {
+                  $('.content').load('CreateTicket.aspx')
+                  $('#l1').css('text-decoration', '')
+                  $('#l1').css('color', '')
+                  $('#l2').css('text-decoration', '')
+                  $('#l2').css('color', '')
+                  $('#l3').css('text-decoration', 'underline')
+                  $('#l3').css('color', '#9dd136')
+                }
+              )
+            </script>
+
+        </form>
+    </nav>
+
+
+<th class="content">
+
+    <form method="post" action="https://my.eudonet.com/speCIF/EUDO_07232/PortailLocataire/ListeTickets.aspx" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE"
+                   value="/wEPDwULLTE3NDg2OTI0MDAPZBYCAgMPZBYSAgMPFgIeCWlubmVyaHRtbAULTWVzIHRpY2tldHNkAgUPDxYCHgRUZXh0BQREYXRlZGQCCQ8PFgIfAQUKUGFyIHN0YXR1dGRkAgsPEA8WBh4ORGF0YVZhbHVlRmllbGQFA0tleR4NRGF0YVRleHRGaWVsZAUFVmFsdWUeC18hRGF0YUJvdW5kZ2QQFQMQVG91cyBsZXMgc3RhdHV0cxUyLkEgcHJlbmRyZSBlbiBjaGFyZ2ULNS5Ww6lyaWZpw6kVAwItMQQzNTc3BDM4MzIUKwMDZ2dnZGQCDQ8PFgIfAQUOUGFyIGNhdMOpZ29yaWVkZAIPDxAPFgYfAgUDS2V5HwMFBVZhbHVlHwRnZBAVBRZUb3V0ZXMgbGVzIGNhdMOpZ29yaWVzEkJvaXRlcyBhdXggbGV0dHJlcwZEaXZlcnMHQWxhcm1lcwpFeHRlcmlldXJzFQUCLTEEMzgzMQQzODI4BDM4MjkENDE0NhQrAwVnZ2dnZ2RkAhEPDxYCHwEFClBhciBtb2R1bGVkZAITDxAPFgYfAgUDS2V5HwMFBVZhbHVlHwRnZBAVBBBUb3VzIGxlcyBtb2R1bGVzC1FJRVhUIDAgMTE2C1FJRVhUIDAgMTE3CVFJSSA0IDEyNBUEAi0xBDc1NDcENzU0OAQ3MTM3FCsDBGdnZ2dkZAIVDw8WAh8BBQxBdWN1biBmaWx0cmVkZGSUctKFQ+qvqKxD1SFFHGm+i/GPU0oOVVs2j7L03sFMDg==">
+        </div>
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="50C0D65A">
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION"
+                   value="/wEdAA4dR9HwxgqT6nfpkjtNmu2ZaelUtUpueTu62133g1pfIs/rWEZFi3WPgBY81FBIYy6QmnPpCK1qPpi4tB6faDhHxRGoYCelgmpQ4XnwX7cQksjxbbDeuyQdlByKgIMv9GZBre0t6KzJ+eFKlGMHUP502FThJhWYxe4tBH016WZVNZLkICyEuMFw4ogncSVRCbBeZ7SSlpE8vbX9NhjEUH9qvsmSorlPFAVTf7E2wRa1Ny4X+ZJGOUOR3Jut8NyU32L1ftbLh/hbAeurvgFbCYBWaY9KCW/pNbLpdawgkkK/wKytulqyVB4SnwH83zBdZSdVZrUT7GxJm/C3MXabtt8W">
+        </div>
+        <div id="placeHolder" class="waa">
+            <div id="message" class="message" runat="server"></div>
+        </div>
+
+<th>
+    <div class="row justify-content-start">
+        <h3 id="mesTickets" class="col-2">Mes tickets</h3>
+        <span class="col-2"><Button type="button" class="btn btn-light" style="background: #9dd136">Créer un ticket</Button></span>
+    </div>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th scope="col">REF</th>
+
+            <th scope="col" id="lbl_parDate">Date
+                <input name="dateTimePicker" type="date" id="dateTimePicker">
+            </th>
+
+            <th scope="col" id="lbl_parStatut">Par statut
+                <select name="lst_statut" id="lst_statut">
+                    <option value="-1">Tous les statuts</option>
+                    <option value="3577">2.A prendre en charge</option>
+                    <option value="3832">5.Vérifié</option>
+                </select>
+            </th>
+
+            <th scope="col" id="lbl_parCategorie">Par catégorie
+                <select name="lst_cat" id="lst_cat">
+                    <option value="-1">Toutes les catégories</option>
+                    <option value="3831">Boites aux lettres</option>
+                    <option value="3828">Divers</option>
+                    <option value="3829">Alarmes</option>
+                    <option value="4146">Exterieurs</option>
+                </select>
+            </th>
+
+
+            <th scope="col" id="lbl_parModule">Par module
+                <select name="lst_module" id="lst_module">
+                    <option value="-1">Tous les modules</option>
+                    <option value="7547">QIEXT 0 116</option>
+                    <option value="7548">QIEXT 0 117</option>
+                    <option value="7137">QII 4 124</option>
+                </select>
+
+            </th>
+
+            <th scope="col" id="aucunFiltre">Aucun filtre</th>
+        </tr>
+        </thead>
+        <tbody id="list_tickets">
+            <tr>
+                <th scope="row" id="unTicket0" class="ticket" data-iddate="17/06/2019" data-idstatut="3577" data-idpasdefiltre="aucunFiltre"
+                    data-idcategorie="3831;3828" data-idmodule="7547">
+                    <img id="img_12" name="displayDetails" class="details" src="image/icon_plus.png"
+                                                                           runat="server" data-idticket="12">
+                </th>
+
+                <td id="blockUn" class="block">
+                    <span id="lbl_nomTicket0" class="lbl"></span>
+                    <p type="text" id="nomTicket0" class="tbx"
+                       value="13 - QIEXT - Bühler AG"
+                       disabled="disabled">
+                        <span id="lbl_date0" class="lbl"></span>
+                    </p>
+                    <p type="text" id="date0" class="tbx" value="17/06/2019 15:10:22" disabled="disabled">
+                        <span id="lbl_immeuble0" class="lbl"></span>
+                    </p>
+                    <p type="text" id="immeuble0" class="tbx" value="EXTÉRIEUR" disabled="disabled"></p>
+                </td>
+                <td id="blockDeux" class="block">
+                    <span id="lbl_module0" class="lbl"></span>
+                    <p type="text" id="Module_0"
+                       class="tbx_module" value="QIEXT 0 116"
+                       disabled="disabled">
+                        <span id="lbl_etat0" class="lbl"></span>
+                    </p>
+                    <p type="text" id="etat0" class="tbx" value="2.A prendre en charge" disabled="disabled">
+                     <span id="lbl_vide0" class="lbl"></span>
+                    </p>
+                    <p type="text" id="vide0" class="tbx_vide" disabled="disabled"></p>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" id="unTicket1" class="ticket" data-iddate="05/06/2019" data-idstatut="3832" data-idpasdefiltre="aucunFiltre"
+                    data-idcategorie="3831;3828" data-idmodule="7548"><img id="img_10" name="displayDetails" class="details" src="image/icon_plus.png"
+                                                                           runat="server" data-idticket="10">
+                    <div id="blockUn" class="block"><span id="lbl_nomTicket1" class="lbl">Ticket</span><input type="text" id="nomTicket1" class="tbx"
+                                                                                                              value="11 - QIEXT - Bühler AG"
+                                                                                                              disabled="disabled"><span id="lbl_date1"
+                                                                                                                                        class="lbl">Date</span><input
+                            type="text" id="date1" class="tbx" value="05/06/2019 11:23:36" disabled="disabled"><span id="lbl_immeuble1"
+                                                                                                                     class="lbl">Immeuble</span><input
+                            type="text" id="immeuble1" class="tbx" value="EXTÉRIEUR" disabled="disabled"></div>
+                    <div id="blockDeux" class="block"><span id="lbl_module1" class="lbl">Module</span><input type="text" id="Module_1"
+                                                                                                             class="tbx_module" value="QIEXT 0 117"
+                                                                                                             disabled="disabled"><span id="lbl_etat1"
+                                                                                                                                       class="lbl">Statut</span><input
+                            type="text" id="etat1" class="tbx" value="5.Vérifié" disabled="disabled"><span id="lbl_vide1" class="lbl"></span><input
+                            type="text" id="vide1" class="tbx_vide" disabled="disabled"></div>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" id="unTicket2" class="ticket" data-iddate="05/06/2019" data-idstatut="3577" data-idpasdefiltre="aucunFiltre"
+                    data-idcategorie="3829;3828" data-idmodule="7547"><img id="img_9" name="displayDetails" class="details" src="image/icon_plus.png"
+                                                                           runat="server" data-idticket="9">
+                    <div id="blockUn" class="block"><span id="lbl_nomTicket2" class="lbl">Ticket</span><input type="text" id="nomTicket2" class="tbx"
+                                                                                                              value="10 - QIEXT - Bühler AG"
+                                                                                                              disabled="disabled"><span id="lbl_date2"
+                                                                                                                                        class="lbl">Date</span><input
+                            type="text" id="date2" class="tbx" value="05/06/2019 11:20:46" disabled="disabled"><span id="lbl_immeuble2"
+                                                                                                                     class="lbl">Immeuble</span><input
+                            type="text" id="immeuble2" class="tbx" value="EXTÉRIEUR" disabled="disabled"></div>
+                    <div id="blockDeux" class="block"><span id="lbl_module2" class="lbl">Module</span><input type="text" id="Module_2"
+                                                                                                             class="tbx_module" value="QIEXT 0 116"
+                                                                                                             disabled="disabled"><span id="lbl_etat2"
+                                                                                                                                       class="lbl">Statut</span><input
+                            type="text" id="etat2" class="tbx" value="2.A prendre en charge" disabled="disabled"><span id="lbl_vide2"
+                                                                                                                       class="lbl"></span><input
+                            type="text" id="vide2" class="tbx_vide" disabled="disabled"></div>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" id="unTicket3" class="ticket" data-iddate="28/05/2019" data-idstatut="3832" data-idpasdefiltre="aucunFiltre"
+                    data-idcategorie="4146" data-idmodule="-2"><img id="img_7" name="displayDetails" class="details" src="image/icon_plus.png"
+                                                                    runat="server" data-idticket="7">
+                    <div id="blockUn" class="block"><span id="lbl_nomTicket3" class="lbl">Ticket</span><input type="text" id="nomTicket3" class="tbx"
+                                                                                                              value="8 - QIEXT - Bühler AG"
+                                                                                                              disabled="disabled"><span id="lbl_date3"
+                                                                                                                                        class="lbl">Date</span><input
+                            type="text" id="date3" class="tbx" value="28/05/2019 14:09:42" disabled="disabled"><span id="lbl_immeuble3"
+                                                                                                                     class="lbl">Immeuble</span><input
+                            type="text" id="immeuble3" class="tbx" value="EXTÉRIEUR" disabled="disabled"></div>
+                    <div id="blockDeux" class="block"><span id="lbl_module3" class="lbl">Module</span><input type="text" id="Module_3"
+                                                                                                             class="tbx_module"
+                                                                                                             disabled="disabled"><span id="lbl_etat3"
+                                                                                                                                       class="lbl">Statut</span><input
+                            type="text" id="etat3" class="tbx" value="5.Vérifié" disabled="disabled"><span id="lbl_vide3" class="lbl"></span><input
+                            type="text" id="vide3" class="tbx_vide" disabled="disabled"></div>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row" id="unTicket4" class="ticket" data-iddate="24/05/2019" data-idstatut="3832" data-idpasdefiltre="aucunFiltre"
+                    data-idcategorie="3829;3828" data-idmodule="7137"><img id="img_6" name="displayDetails" class="details" src="image/icon_plus.png"
+                                                                           runat="server" data-idticket="6">
+                    <div id="blockUn" class="block"><span id="lbl_nomTicket4" class="lbl">Ticket</span><input type="text" id="nomTicket4" class="tbx"
+                                                                                                              value="7 - QII - Bühler AG"
+                                                                                                              disabled="disabled"><span id="lbl_date4"
+                                                                                                                                        class="lbl">Date</span><input
+                            type="text" id="date4" class="tbx" value="24/05/2019 13:46:49" disabled="disabled"><span id="lbl_immeuble4"
+                                                                                                                     class="lbl">Immeuble</span><input
+                            type="text" id="immeuble4" class="tbx" value="BÂTIMENT I" disabled="disabled"></div>
+                    <div id="blockDeux" class="block"><span id="lbl_module4" class="lbl">Module</span><input type="text" id="Module_4"
+                                                                                                             class="tbx_module" value="QII 4 124"
+                                                                                                             disabled="disabled"><span id="lbl_etat4"
+                                                                                                                                       class="lbl">Statut</span><input
+                            type="text" id="etat4" class="tbx" value="5.Vérifié" disabled="disabled"><span id="lbl_vide4" class="lbl"></span><input
+                            type="text" id="vide4" class="tbx_vide" disabled="disabled"></div>
+                </th>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    </form>
+    <script>
+      setTimeout(function () {
+        document.getElementById('placeHolder').className = 'waa'
+      }, 5000)
+      // réinitialise les filtres
+      $('#aucunFiltre').click(function () {
+        $('#lst_cat option[value=\'-1\']').prop('selected', true)
+        $('#lst_statut option[value=\'-1\']').prop('selected', true)
+        $('#lst_module option[value=\'-1\']').prop('selected', true)
+        $('#dateTimePicker').val('')
+        $('.ticket[style*="display: none"]').each(function () {
+          $(this).css('display', '')
+          $(this).css('display', 'content')
+        })
+      })
+
+      // filtre par statut
+      $('#lst_statut').change(function () {
+        $('#lst_cat option[value=\'-1\']').prop('selected', true)
+        $('#lst_module option[value=\'-1\']').prop('selected', true)
+        $('#dateTimePicker').val('')
+
+        $('.ticket[style*="display: none"]').each(function () {
+          $(this).css('display', '')
+          $(this).css('display', 'content')
+        })
+        if ($('#lst_statut').val() != '-1') {
+          $('.ticket').each(function () {
+            if ($(this).attr('data-idStatut') == $('#lst_statut').val()) {
+
+              $(this).css('display', 'content')
+            } else {
+              $(this).css('display', 'none')
+            }
+          })
+        }
+      })
+
+      // filtre par module
+      $('#lst_module').change(function () {
+        $('#lst_cat option[value=\'-1\']').prop('selected', true)
+        $('#lst_statut option[value=\'-1\']').prop('selected', true)
+        $('#dateTimePicker').val('')
+
+        $('.ticket[style*="display: none"]').each(function () {
+          $(this).css('display', '')
+          $(this).css('display', 'content')
+        })
+        if ($('#lst_module').val() != '-1') {
+          $('.ticket').each(function () {
+            if ($(this).attr('data-idModule') == $('#lst_module').val()) {
+
+              $(this).css('display', 'content')
+            } else {
+              $(this).css('display', 'none')
+            }
+          })
+        }
+      })
+
+      // filtre par catégories
+      $('#lst_cat').change(function () {
+        $('#lst_module option[value=\'-1\']').prop('selected', true)
+        $('#lst_statut option[value=\'-1\']').prop('selected', true)
+        $('#dateTimePicker').val('')
+
+        $('.ticket[style*="display: none"]').each(function () {
+          $(this).css('display', '')
+          $(this).css('display', 'content')
+        })
+        if ($('#lst_cat').val() != '-1') {
+          $('.ticket').each(function () {
+            if ($(this).attr('data-idCategorie').includes($('#lst_cat').val())) {
+              $(this).css('display', 'content')
+            } else {
+              $(this).css('display', 'none')
+            }
+          })
+        }
+      })
+
+      // filtre par date de création
+      $('#dateTimePicker').change(function () {
+        $('#lst_module option[value=\'-1\']').prop('selected', true)
+        $('#lst_statut option[value=\'-1\']').prop('selected', true)
+        $('#lst_cat option[value=\'-1\']').prop('selected', true)
+        $('.ticket[style*="display: none"]').each(function () {
+          $(this).css('display', '')
+          $(this).css('display', 'content')
+        })
+        var date1 = $('#dateTimePicker').val()
+        var d = date1.split('-')
+        var de = d[2] + '/' + d[1] + '/' + d[0]
+        $('.ticket').each(function () {
+          var dt = $(this).attr('data-idDate')
+          if (dt == de) {
+            $(this).css('display', 'content')
+          } else {
+            $(this).css('display', 'none')
+          }
+        })
+      })
+
+      // bouton (a) retour à la liste du modal
+      $('#retour').click(function () {
+        $('#ticket').css('display', 'none')
+        $('.content').load('ListeTickets.aspx')
+      })
+
+      // afficher les détails d'un ticket
+      $('.details').click(function () {
+        //$('#list-tickets').css('display', 'none');
+        var idTicket = $(this).attr('data-idticket')
+        console.log(idTicket)
+        $('.content').load('DetailsTicket.aspx?id=' + idTicket)
+      })
+
+    </script>
+
+
+    </div>
+
+    </div>
+
+
+    <script>
+      $(document).ready(function () {
+        $('.content').load('ListeTickets.aspx')
+        $('.menu').load('Menu.aspx')
+      })
+    </script>
+</body>
+</html>

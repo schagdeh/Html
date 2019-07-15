@@ -1,0 +1,152 @@
+﻿
+.etapes label { 
+    display:inline-block; 
+    width:308px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.etapes label { 
+    display:inline-block; 
+    width:308px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+.titreT{
+    /*background-image: url(../image/create.jpg);
+    height:80px;
+    display:block;
+    margin-bottom:15px;*/
+    background-color:#9dd136;
+    height:50px;
+    width:auto;
+    display:block;
+    color:black;
+    text-align:left;
+    font-size:36px;
+    padding-left:5%;
+    padding-top:1%;
+    box-shadow: inset 0px 1px 8px 1px rgba(119, 119, 119, 0.6);
+}
+#lbl_rechercherRefModule{
+    color:black;
+    font-size:small;
+    margin:0 auto;
+    width:300px;
+    margin-left: 300px;
+}
+
+#lbl_telechargement{
+    cursor: pointer;
+   background-color: #e7e7e7; 
+   color: black;
+   width:250px;
+   height: 20px;
+   display:inline-block;   
+    margin:5px;
+}
+#lbl_download{
+    display:inline-block; 
+    width:308px;
+    margin-right: 5px;
+    margin-left:15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    vertical-align: top;
+}
+
+#file {
+    visibility: hidden;
+    width:0px;
+}
+
+.etapes input { 
+    display:inline-block;   
+    margin:5px;
+    width:250px;
+}
+.etapes select { 
+    display:inline-block;   
+    margin:5px;
+    width:250px;
+}
+
+#Label1{
+    display:inline-block;   
+    margin:5px;
+    width:308px;
+}
+#recapitulatif_selection{
+    display:inline-block;   
+    margin:5px;
+    width:250px;
+    word-wrap:break-word;
+    font-size:small;
+}
+
+textarea { 
+    display:inline-block;   
+    margin:5px;
+    width:250px;
+    resize: none;
+}
+
+#module {
+    max-height: 150px;
+}
+
+.validator {
+    color:red;
+}
+
+.form-recapitulatif input[type=submit] {
+    display:block;
+    margin-left:45%;
+    background-color:#9dd136;
+    border :none;
+    width: 100px;
+    color: white;
+}
+
+input[type=button] {
+    display:block;
+    margin-left:45%;
+    background-color:#9dd136;
+    border :none;
+    width: 100px;
+    display:inline-block;   
+    margin:5px;
+    color:white;
+    cursor:pointer;
+}
+
+.bandeau a {
+    padding:5px;
+    width: auto;
+}
+
+.bandeau {
+    display: inline-flex;
+}
+.right-arrow {
+    width: 26px;
+    height: 26px;
+    margin: 2px;
+}
+
+.etp {
+    display:contents;
+}
+
+.create-ticket {
+    text-align:center;
+    margin-top:1%;
+}
+
+.etapes {
+    margin: 0 auto;
+    width: auto;
+    height: auto;
+}
